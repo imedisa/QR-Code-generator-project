@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+.special-title {
+  transform: translate(-50%, -50%);
+}
+.special-input {
+  border: 1px solid #494eea;
+  margin: 10px 0 20px;
+}
+.special-button {
+  background-color: #494eea;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
