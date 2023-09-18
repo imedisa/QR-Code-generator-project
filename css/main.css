@@ -607,6 +607,14 @@ video {
   width: 100%;
 }
 
+.w-8\/12 {
+  width: 66.666667%;
+}
+
+.w-11\/12 {
+  width: 91.666667%;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -647,6 +655,11 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5;
@@ -668,4 +681,23 @@ video {
 
 .outline-0 {
   outline-width: 0px;
+}
+
+@media (min-width: 640px) {
+  .sm\:left-2\/4 {
+    left: 50%;
+  }
+
+  .sm\:top-2\/4 {
+    top: 50%;
+  }
+
+  .sm\:w-96 {
+    width: 24rem;
+  }
+
+  .sm\:px-9 {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
 }
