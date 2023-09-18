@@ -15,3 +15,20 @@
   background-color: #494eea;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
+#imgBox{
+    width: 200px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition : max-height 1s
+}
+#imgBox img{
+    width: 100% ;
+    padding: 10px;
+
+}
+#imgBox.show-img{
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
+}

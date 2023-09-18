@@ -9,7 +9,7 @@
   </head>
   <body class="bg-slate-700">
     <div
-      class="px-9 py-6 absolute top-2/4 left-2/4 bg-white special-title rounded-lg w-96"
+      class="px-9 py-6 container absolute top-2/4 left-2/4 bg-white special-title rounded-lg w-96"
     >
       <p class="font-semibold text-base mb-2">Enter your text or URL</p>
       <input
@@ -19,17 +19,27 @@
         id="qrText"
       />
       <div id="imgBox">
-        <img src="" alt="" id="qrImage">
+        <img src="" alt="" id="qrImage" />
       </div>
-      <button class="special-button h-12 w-full text-white rounded-md border-0 outline-0 cursor my-5 font-medium	">Generate QR Code</button>
+      <button
+        onclick="generateQR()"
+        class="special-button h-12 w-full text-white rounded-md border-0 outline-0 cursor my-5 font-medium"
+      >
+        Generate QR Code
+      </button>
     </div>
     <script>
       let imgBox = document.getElementById("imgBox");
       let qrImage = document.getElementById("qrImage");
       let qrText = document.getElementById("qrText");
 
-      function generateQR(){
-
+      function generateQR() {
+        if (qrText.value.length > 0) {
+          qrImage.src =
+            " https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" +
+            qrText.value;
+          imgBox.classList.add("show-img");
+        }
       }
     </script>
   </body>
